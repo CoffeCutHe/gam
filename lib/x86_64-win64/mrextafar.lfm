@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 352
+  Height = 650
+  Top = 97
+  Width = 440
+  Caption = 'TForm1'
+  ClientHeight = 650
+  ClientWidth = 440
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  LCLVersion = '2.0.6.0'
+  object Shape1: TShape
+    Left = 200
+    Height = 24
+    Top = 200
+    Width = 25
+    Shape = stCircle
+  end
+  object Shape2: TShape
+    Left = 175
+    Height = 18
+    Top = 550
+    Width = 75
+  end
+  object Label1: TLabel
+    Left = 336
+    Height = 13
+    Top = 24
+    Width = 40
+    Caption = 'Score: 0'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 333
+    Height = 13
+    Top = 43
+    Width = 31
+    Caption = 'Label2'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 333
+    Height = 13
+    Top = 64
+    Width = 31
+    Caption = 'Label3'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 175
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'GAY'
+    OnClick = Button1Click
+    TabOrder = 0
+    Visible = False
+  end
+  object Button2: TButton
+    Left = 175
+    Height = 25
+    Top = 312
+    Width = 75
+    Caption = 'End'
+    OnClick = Button2Click
+    TabOrder = 1
+    Visible = False
+  end
+  object Label4: TLabel
+    Left = 184
+    Height = 13
+    Top = 256
+    Width = 62
+    Caption = 'ПОТРАЧЕНО'
+    ParentColor = False
+    Visible = False
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    left = 8
+    top = 16
+  end
+end
